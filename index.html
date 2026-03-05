@@ -12,29 +12,62 @@ box-sizing:border-box;
 font-family:'Segoe UI', sans-serif;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 background:gainsboro;
 }
 
+.navbar{
+position:fixed;
+top:0;
+width:100%;
+background:black;
+padding:15px 0;
+z-index:1000;
+}
 
+.navbar ul{
+list-style:none;
+display:flex;
+justify-content:center;
+}
+
+.navbar li{
+margin:0 20px;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+font-size:18px;
+transition:0.3s;
+}
+
+.navbar a:hover{
+color:orange;
+}
 
 .hero{
-background: linear-gradient(135deg, coral, sandybrown);
-padding:120px 20px;
+background:linear-gradient(135deg, coral, sandybrown);
+padding:160px 20px 120px 20px;
 text-align:center;
 color:white;
-font-family: Arial, Helvetica, sans-serif;
+font-family:Arial, Helvetica, sans-serif;
 }
 
 .hero h1{
 font-size:48px;
-animation: zoomIn 1s ease;
+animation:zoomIn 1s ease;
 }
 
 .hero p{
 font-size:20px;
 margin-top:15px;
-animation: fadeUp 1.5s ease;
+animation:fadeUp 1.5s ease;
 font-family:'Poppins', sans-serif;
 }
 
@@ -53,19 +86,15 @@ transform:scale(1.05);
 box-shadow:0 15px 30px rgba(0,0,0,0.3);
 }
 
-
-
-.bg1{ background:lightcyan; }
-.bg2{ background:honeydew; }
-.bg3{ background:cornsilk; }
-.bg4{ background:lavender; }
+.bg1{background:lightcyan;}
+.bg2{background:honeydew;}
+.bg3{background:cornsilk;}
+.bg4{background:lavender;}
 
 section{
 padding:100px 0;
 position:relative;
 }
-
-
 
 .card{
 background:white;
@@ -82,11 +111,9 @@ animation:slideUp 1s forwards;
 
 .card:hover{
 background:lightcyan;
-transform:translateX(-50%) scale(1.1);
+transform:scale(1.05);
 transition:0.3s;
 }
-
-
 
 .icon{
 position:absolute;
@@ -114,6 +141,7 @@ transition:0.3s;
 h2{
 margin-bottom:20px;
 color:darkslategray;
+text-align:center;
 }
 
 p{
@@ -126,10 +154,6 @@ ul{
 margin-left:20px;
 line-height:1.6;
 }
-
-
-
-  
 
 .skills span{
 display:inline-block;
@@ -146,11 +170,6 @@ transform:rotate(5deg) scale(1.15);
 background:orangered;
 }
 
-
-
-
-  
-
 @keyframes slideUp{
 to{
 opacity:1;
@@ -159,13 +178,13 @@ transform:translateY(0);
 }
 
 @keyframes zoomIn{
-from{ transform:scale(0.7); opacity:0; }
-to{ transform:scale(1); opacity:1; }
+from{transform:scale(0.7);opacity:0;}
+to{transform:scale(1);opacity:1;}
 }
 
 @keyframes fadeUp{
-from{ transform:translateY(30px); opacity:0; }
-to{ transform:translateY(0); opacity:1; }
+from{transform:translateY(30px);opacity:0;}
+to{transform:translateY(0);opacity:1;}
 }
 
 footer{
@@ -180,66 +199,50 @@ color:white;
 
 <body>
 
+<nav class="navbar">
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#activities">Activities</a></li>
+</ul>
+</nav>
 
-
-
-
-  
 <div class="hero">
-<img src="ayushi.png" alt="Ayushi Agrawal" class="profile-img">
+<img src="ayushi.png" class="profile-img">
 <h1 style="font-family:'ADLaM Display', cursive;">Ayushi Agrawal</h1>
 <p style="font-weight:bold;">Aspiring Software Developer • DBMS Enthusiast • Problem Solver</p>
-<p style="font-weight:bold; font-style:oblique;">Currently pursuing B.Tech in IT</p>
+<p style="font-weight:bold;font-style:oblique;">Currently pursuing B.Tech in IT</p>
 </div>
 
-
-
-
-
-  
-<section class="bg1">
+<section class="bg1" id="about">
 <div class="card">
 <div class="icon">&#128100;</div>
 <h2>About Me</h2>
-
 <p style="font-family:'ADLaM Display', cursive;">
 I am a motivated B.Tech IT student with a strong interest in software development,
-backend systems, and database management. I enjoy building structured,
-scalable solutions and have a solid foundation in Java and DBMS concepts.
-I am continuously improving my problem-solving skills and exploring
-real-world projects to strengthen my technical expertise.
-My goal is to contribute to impactful software systems while growing
-as a developer through hands-on experience.
+backend systems, and database management. I enjoy building structured scalable
+solutions and have a solid foundation in Java and DBMS concepts. I continuously
+improve my problem solving skills and explore real world projects to strengthen
+my technical expertise.
 </p>
-
 </div>
 </section>
 
-
-
-
-
-  
-<section class="bg2">
+<section class="bg2" id="education">
 <div class="card">
 <div class="icon">&#127891;</div>
 <h2>Education</h2>
-
 <p><strong>B.Tech – Information Technology</strong></p>
 <p>Banasthali Vidyapith, Rajasthan | 2023 – 2027</p>
-
 </div>
 </section>
 
-
-
-
-  
-<section class="bg3">
+<section class="bg3" id="skills">
 <div class="card">
 <div class="icon">&#128187;</div>
 <h2>Skills</h2>
-
 <div class="skills">
 <span>HTML</span>
 <span>CSS</span>
@@ -248,104 +251,87 @@ as a developer through hands-on experience.
 <span>Java</span>
 <span>SQL</span>
 </div>
-
 </div>
 </section>
 
-
-
-
-
-  
-<section class="bg4">
+<section class="bg4" id="projects">
 <div class="card">
 <div class="icon">&#128640;</div>
 <h2>Projects</h2>
-
 <ul>
 
-<li style="font-family:'Courier New', monospace; font-style:italic; font-weight:bold; font-size:20px;">
+<li style="font-family:'Courier New', monospace;font-style:italic;font-weight:bold;font-size:20px;">
 Diet & Exercise Buddy | C++
 <ul>
-<li style="font-family:Arial; font-size:16px;">
-Developed a console-based application to track daily food intake and
-exercise activities using file handling. Implemented BMI calculation
-and calorie monitoring features.
+<li style="font-family:Arial;font-size:16px;">
+Developed a console based application to track daily food intake and exercise
+activities using file handling with BMI calculation and calorie monitoring.
 </li>
 </ul>
 </li>
 
-<li style="font-family:'Courier New', monospace; font-style:italic; font-weight:bold; font-size:20px;">
+<li style="font-family:'Courier New', monospace;font-style:italic;font-weight:bold;font-size:20px;">
 Sudoku Game | C++
 <ul>
-<li style="font-family:Arial; font-size:16px;">
-Built a console-based Sudoku game implementing logic validation and
-backtracking techniques.
+<li style="font-family:Arial;font-size:16px;">
+Built a console based Sudoku game implementing logic validation and backtracking techniques.
 </li>
 </ul>
 </li>
 
-<li style="font-family:'Courier New', monospace; font-style:italic; font-weight:bold; font-size:20px;">
+<li style="font-family:'Courier New', monospace;font-style:italic;font-weight:bold;font-size:20px;">
 SIH Project – Digital Health Record Management System
 <ul>
-<li style="font-family:Arial; font-size:16px;">
-Designed a prototype system to manage digital health records for
-migrant workers aligned with Sustainable Development Goals.
+<li style="font-family:Arial;font-size:16px;">
+Designed a prototype system to manage digital health records for migrant workers aligned with SDGs.
 </li>
 </ul>
 </li>
 
 </ul>
-
 </div>
 </section>
 
-
-
-
-
-  
-<section class="bg2">
+<section class="bg2" id="activities">
 <div class="card">
 <div class="icon">&#127942;</div>
-
 <h2>Extra-Curricular Activities</h2>
 
 <ul>
 
 <li><strong>Technical Event Participation</strong>
 <ul>
-<li>Participated in coding competitions, hackathons and technical quizzes.</li>
+<li>Participated in coding competitions hackathons and technical quizzes.</li>
 </ul>
 </li>
 
 <li><strong>Project Showcases</strong>
 <ul>
-<li>Presented academic and personal projects demonstrating structured design.</li>
+<li>Presented academic and personal projects demonstrating structured implementation skills.</li>
 </ul>
 </li>
 
 <li><strong>Team Collaboration</strong>
 <ul>
-<li>Worked in team-based academic projects improving communication skills.</li>
+<li>Worked in team based academic projects improving communication and coordination.</li>
 </ul>
 </li>
 
 <li><strong>Creative Activities</strong>
 <ul>
-<li>Engaged in creative crafting and design-based activities.</li>
+<li>Engaged in creative crafting and design based activities.</li>
 </ul>
 </li>
 
 <li><strong>Sports – Badminton & Squash</strong>
 <ul>
-<li>Regularly engaged in badminton and squash.</li>
+<li>Regularly engaged in badminton and squash improving discipline and teamwork.</li>
 </ul>
 </li>
 
 <li><strong>Informal Education Activities</strong>
 <ul>
-<li>Participated in informal learning programs and co-curricular sessions.</li>
+<li>Participated in informal learning programs and co curricular sessions.</li>
 </ul>
 </li>
 
@@ -360,4 +346,3 @@ migrant workers aligned with Sustainable Development Goals.
 
 </body>
 </html>
-
