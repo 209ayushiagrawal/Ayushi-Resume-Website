@@ -1,316 +1,334 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ayushi Agrawal Resume</title>
-    
-    <style>
+<title>Ayushi Agrawal Resume</title>
 
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family: 'Segoe UI', sans-serif;
-        }
+<style>
 
-        body{
-            background:#f4f4f4;
-        }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI', sans-serif;
+}
 
-        /* ---------- HERO SECTION ---------- */
+body{
+background:gainsboro;
+}
 
-        .hero{
-            background: linear-gradient(135deg,#ff7e5f,#feb47b);
-            padding:120px 20px;
-            text-align:center;
-            color:whitge;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+/* ---------- HERO SECTION ---------- */
 
-        .hero h1{
-            font-size:48px;
-            animation: zoomIn 1s ease;
-        }
+.hero{
+background: linear-gradient(135deg, coral, sandybrown);
+padding:120px 20px;
+text-align:center;
+color:white;
+font-family: Arial, Helvetica, sans-serif;
+}
 
-        .hero p{
-            font-size:20px;
-            margin-top:15px;
-            animation: fadeUp 1.5s ease;
-            font-family: 'Poppins', sans-serif;
-        }
-        .profile-img{
-        width:160px;
-        height:160px;
-        border-radius:50%;
-        object-fit:cover;
-        border:4px solid white;
-        box-shadow:0 10px 25px rgba(0,0,0,0.2);
-        transition:0.5s;
-    }
+.hero h1{
+font-size:48px;
+animation: zoomIn 1s ease;
+}
 
-    .profile-img:hover{
-        transform:scale(1.05);
-        box-shadow:0 15px 30px rgba(0,0,0,0.3);}
+.hero p{
+font-size:20px;
+margin-top:15px;
+animation: fadeUp 1.5s ease;
+font-family:'Poppins', sans-serif;
+}
 
-        /* ---------- SECTION BACKGROUNDS ---------- */
+.profile-img{
+width:160px;
+height:160px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid white;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+transition:0.5s;
+}
 
-        .bg1{ background:#e0f7fa; }
-        .bg2{ background:#e8f5e9; }
-        .bg3{ background:#fff3e0; }
-        .bg4{ background:#ede7f6; }
+.profile-img:hover{
+transform:scale(1.05);
+box-shadow:0 15px 30px rgba(0,0,0,0.3);
+}
 
-        section{
-            padding:100px 0;
-            position:relative;
-        }
+/* ---------- SECTION BACKGROUNDS ---------- */
 
-        /* ---------- CARD STYLE ---------- */
+.bg1{ background:lightcyan; }
+.bg2{ background:honeydew; }
+.bg3{ background:cornsilk; }
+.bg4{ background:lavender; }
 
-        .card{
-            background:white;
-            width:80%;
-            max-width:900px;
-            margin:auto;
-            padding:40px;
-            border-radius:80px;
-            box-shadow:0 10px 25px rgba(0,0,0,0.1);
-            transform:translateY(50px);
-            opacity:0;
-            animation: slideUp 1s forwards;
-        }
+section{
+padding:100px 0;
+position:relative;
+}
 
-        .card:hover{
-            background:lightcyan;
-            transform:translateX(-50%) scale(1.1);
-            transition:0.3s;
-        }
+/* ---------- CARD STYLE ---------- */
 
+.card{
+background:white;
+width:80%;
+max-width:900px;
+margin:auto;
+padding:40px;
+border-radius:80px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transform:translateY(50px);
+opacity:0;
+animation:slideUp 1s forwards;
+}
 
-        .icon{
-            position:absolute;
-            left:50%;
-            transform:translateX(-50%);
-            top:-30px;
-            background:#ff7e5f;
-            width:60px;
-            height:60px;
-            border-radius:50%;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            color:white;
-            font-size:24px;
-            box-shadow:0 5px 15px rgba(0,0,0,0.2);
-        }
-        .icon:hover{
-            background:#ff5722;
-            transform:translateX(-50%) scale(1.1);
-            transition:0.3s;
-        }
+.card:hover{
+background:lightcyan;
+transform:translateX(-50%) scale(1.1);
+transition:0.3s;
+}
 
-        h2{
-            margin-bottom:20px;
-            color:#333;
-        }
+/* ---------- ICON ---------- */
 
-        p{
-            line-height:1.6;
-            margin-bottom:15px;
-            color:#555;
-        }
+.icon{
+position:absolute;
+left:50%;
+transform:translateX(-50%);
+top:-30px;
+background:coral;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+font-size:24px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
 
-        ul{
-            margin-left:20px;
-            line-height:1.6;
-        }
+.icon:hover{
+background:orangered;
+transform:translateX(-50%) scale(1.1);
+transition:0.3s;
+}
 
-        /* ---------- SKILLS ---------- */
+h2{
+margin-bottom:20px;
+color:darkslategray;
+}
 
-        .skills span{
-            display:inline-block;
-            background:#ff7e5f;
-            color:white;
-            padding:8px 15px;
-            margin:8px 6px;
-            border-radius:20px;
-            transition:0.3s;
-        }
+p{
+line-height:1.6;
+margin-bottom:15px;
+color:dimgray;
+}
 
-        .skills span:hover{
-            transform:rotate(5deg) scale(1.15);
-            background:#ff5722;
-        }
+ul{
+margin-left:20px;
+line-height:1.6;
+}
 
-        /* ---------- ANIMATIONS ---------- */
+/* ---------- SKILLS ---------- */
 
-        @keyframes slideUp{
-            to{
-                opacity:1;
-                transform:translateY(0);
-            }
-        }
+.skills span{
+display:inline-block;
+background:coral;
+color:white;
+padding:8px 15px;
+margin:8px 6px;
+border-radius:20px;
+transition:0.3s;
+}
 
-        @keyframes zoomIn{
-            from{ transform:scale(0.7); opacity:0; }
-            to{ transform:scale(1); opacity:1; }
-        }
+.skills span:hover{
+transform:rotate(5deg) scale(1.15);
+background:orangered;
+}
 
-        @keyframes fadeUp{
-            from{ transform:translateY(30px); opacity:0; }
-            to{ transform:translateY(0); opacity:1; }
-        }
+/* ---------- ANIMATIONS ---------- */
 
-        footer{
-            text-align:center;
-            padding:30px;
-            background:#333;
-            color:white;
-        }
+@keyframes slideUp{
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
 
-    </style>
+@keyframes zoomIn{
+from{ transform:scale(0.7); opacity:0; }
+to{ transform:scale(1); opacity:1; }
+}
+
+@keyframes fadeUp{
+from{ transform:translateY(30px); opacity:0; }
+to{ transform:translateY(0); opacity:1; }
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:black;
+color:white;
+}
+
+</style>
 </head>
 
 <body>
 
-    <!-- HERO -->
-    <div class="hero">
-        <img src="ayushi.png" alt="Ayushi Agrawal" class="profile-img">
-        <h1 style="font-family: 'ADLaM Display', cursive;">Ayushi Agrawal</h1>
-        <p style="font-weight: bold;">Aspiring Software Developer • DBMS Enthusiast •  Problem Solver</p>
-        <p style="font-weight: bold; font-style: oblique;">Currently pursuing B.Tech in IT</p>
-    </div>
+<!-- HERO -->
+<div class="hero">
+<img src="ayushi.png" alt="Ayushi Agrawal" class="profile-img">
+<h1 style="font-family:'ADLaM Display', cursive;">Ayushi Agrawal</h1>
+<p style="font-weight:bold;">Aspiring Software Developer • DBMS Enthusiast • Problem Solver</p>
+<p style="font-weight:bold; font-style:oblique;">Currently pursuing B.Tech in IT</p>
+</div>
 
-    <!-- ABOUT -->
-    <section class="bg1">
-        <div class="card">
-            <div class="icon">&#128100;</div>
-            <h2>About Me</h2>
-            <p style="font-family: 'ADLaM Display', cursive;">
-                I am a motivated B.Tech IT student with 
-                a strong interest in software development, 
-                backend systems, and database management. 
-                I enjoy building structured, scalable 
-                solutions and have a solid foundation in 
-                Java and DBMS concepts. I am continuously 
-                improving my problem-solving skills and
-                exploring real-world projects to strengthen
-                my technical expertise. My goal is to contribute 
-                to impactful software systems while growing 
-                as a developer through hands-on experience.
-            </p>
-        </div>
-    </section>
+<!-- ABOUT -->
+<section class="bg1">
+<div class="card">
+<div class="icon">&#128100;</div>
+<h2>About Me</h2>
 
-    <!-- EDUCATION -->
-    <section class="bg2">
-        <div class="card">
-            <div class="icon">&#127891;</div>
-            <h2>Education</h2>
-            <p><strong>B.Tech – Information Technology</strong></p>
-            <p>Banasthali Vidyapith, Rajasthan| 2023 – 2027</p>
-        </div>
-    </section>
+<p style="font-family:'ADLaM Display', cursive;">
+I am a motivated B.Tech IT student with a strong interest in software development,
+backend systems, and database management. I enjoy building structured,
+scalable solutions and have a solid foundation in Java and DBMS concepts.
+I am continuously improving my problem-solving skills and exploring
+real-world projects to strengthen my technical expertise.
+My goal is to contribute to impactful software systems while growing
+as a developer through hands-on experience.
+</p>
 
-    <!-- SKILLS -->
-    <section class="bg3">
-        <div class="card">
-            <div class="icon">&#128187;</div>
-            <h2>Skills</h2>
-            <div class="skills">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>C</span>
-                <span>C++</span>
-                <span>Java</span>
-                <span>SQL</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="bg4">
-    <div class="card">
-        <div class="icon">&#128640;</div>
-        <h2>Projects</h2>
-        <ul>
-
-            <li style="font-family: 'Courier New', monospace; font-style: italic; font-weight: bold; font-size: 20px;">
-                Diet & Exercise Buddy | C++
-                <ul>
-                    <li style="font-family: Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 16px;">
-                        Developed a console-based application to track daily food intake and exercise activities using file handling. Implemented BMI calculation and calorie monitoring features to promote a healthier lifestyle. Applied object-oriented programming and structured data management concepts.
-                    </li>
-                </ul>
-            </li>
-
-            <li style="font-family: 'Courier New', monospace; font-style: italic; font-size: 20px;  font-weight: bold">
-                Sudoku Game | C++
-                <ul>
-                    <li style="font-family: Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 16px;">
-                        Built a console-based Sudoku game implementing logic validation and backtracking techniques. Focused on problem-solving, algorithm design, and user interaction through structured programming.
-                    </li>
-                </ul>
-            </li>
-
-            <li style="font-family: 'Courier New', monospace; font-style: italic; font-size: 20px; font-weight: bold">
-                SIH Project – Digital Health Record Management System
-                <ul>
-                    <li style="font-family: Arial, sans-serif; font-style: normal; font-weight: normal; font-size: 16px;">
-                        Designed a prototype system to manage digital health records for migrant workers in Kerala, aligned with Sustainable Development Goals (SDGs). Focused on secure data storage, accessibility, and efficient record management. Developed a working demo despite not being selected for the final hackathon round.
-                    </li>
-                </ul>
-            </li>
-
-        </ul>
-    </div>
+</div>
 </section>
-<!-- Extra Curricular Activities -->
+
+<!-- EDUCATION -->
 <section class="bg2">
-    <div class="card">
-        <div class="icon">&#127942;</div>  <!-- Trophy Icon -->
-        <h2>Extra-Curricular Activities</h2>
+<div class="card">
+<div class="icon">&#127891;</div>
+<h2>Education</h2>
 
-        <ul>
-            <li><strong>Technical Event Participation</strong>
-                <ul>
-                    <li>Participated in coding competitions, hackathons and technical quizzes to enhance problem-solving skills.</li>
-                </ul>
-            </li>
+<p><strong>B.Tech – Information Technology</strong></p>
+<p>Banasthali Vidyapith, Rajasthan | 2023 – 2027</p>
 
-            <li><strong>Project Showcases</strong>
-                <ul>
-                    <li>Presented academic and personal projects demonstrating structured design and implementation skills.</li>
-                </ul>
-            </li>
-
-            <li><strong>Team Collaboration</strong>
-                <ul>
-                    <li>Worked in team-based academic projects improving communication and coordination skills.</li>
-                </ul>
-            </li>
-
-            <li><strong>Creative Activities</strong>
-                <ul>
-                    <li>Engaged in creative crafting and design-based activities developing attention to detail.</li>
-                </ul>
-            </li>
-            <li><strong>Sports – Badminton & Squash</strong>
-                <ul>
-                    <li>Regularly engaged in badminton and squash, enhancing teamwork, discipline, and physical fitness.</li>
-                </ul>
-            </li>
-
-            <li><strong>Informal Education Activities</strong>
-                <ul>
-                    <li>Participated in informal learning programs and co-curricular sessions to develop communication and leadership skills.</li>
-                </ul>
-            </li>
-        </ul>
-
-    </div>
+</div>
 </section>
-    <footer>
-        © 2026 Ayushi Agrawal | All Rights Reserved
-    </footer>
+
+<!-- SKILLS -->
+<section class="bg3">
+<div class="card">
+<div class="icon">&#128187;</div>
+<h2>Skills</h2>
+
+<div class="skills">
+<span>HTML</span>
+<span>CSS</span>
+<span>C</span>
+<span>C++</span>
+<span>Java</span>
+<span>SQL</span>
+</div>
+
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section class="bg4">
+<div class="card">
+<div class="icon">&#128640;</div>
+<h2>Projects</h2>
+
+<ul>
+
+<li style="font-family:'Courier New', monospace; font-style:italic; font-weight:bold; font-size:20px;">
+Diet & Exercise Buddy | C++
+<ul>
+<li style="font-family:Arial; font-size:16px;">
+Developed a console-based application to track daily food intake and
+exercise activities using file handling. Implemented BMI calculation
+and calorie monitoring features.
+</li>
+</ul>
+</li>
+
+<li style="font-family:'Courier New', monospace; font-style:italic; font-weight:bold; font-size:20px;">
+Sudoku Game | C++
+<ul>
+<li style="font-family:Arial; font-size:16px;">
+Built a console-based Sudoku game implementing logic validation and
+backtracking techniques.
+</li>
+</ul>
+</li>
+
+<li style="font-family:'Courier New', monospace; font-style:italic; font-weight:bold; font-size:20px;">
+SIH Project – Digital Health Record Management System
+<ul>
+<li style="font-family:Arial; font-size:16px;">
+Designed a prototype system to manage digital health records for
+migrant workers aligned with Sustainable Development Goals.
+</li>
+</ul>
+</li>
+
+</ul>
+
+</div>
+</section>
+
+<!-- EXTRA CURRICULAR -->
+<section class="bg2">
+<div class="card">
+<div class="icon">&#127942;</div>
+
+<h2>Extra-Curricular Activities</h2>
+
+<ul>
+
+<li><strong>Technical Event Participation</strong>
+<ul>
+<li>Participated in coding competitions, hackathons and technical quizzes.</li>
+</ul>
+</li>
+
+<li><strong>Project Showcases</strong>
+<ul>
+<li>Presented academic and personal projects demonstrating structured design.</li>
+</ul>
+</li>
+
+<li><strong>Team Collaboration</strong>
+<ul>
+<li>Worked in team-based academic projects improving communication skills.</li>
+</ul>
+</li>
+
+<li><strong>Creative Activities</strong>
+<ul>
+<li>Engaged in creative crafting and design-based activities.</li>
+</ul>
+</li>
+
+<li><strong>Sports – Badminton & Squash</strong>
+<ul>
+<li>Regularly engaged in badminton and squash.</li>
+</ul>
+</li>
+
+<li><strong>Informal Education Activities</strong>
+<ul>
+<li>Participated in informal learning programs and co-curricular sessions.</li>
+</ul>
+</li>
+
+</ul>
+
+</div>
+</section>
+
+<footer>
+© 2026 Ayushi Agrawal | All Rights Reserved
+</footer>
 
 </body>
 </html>
